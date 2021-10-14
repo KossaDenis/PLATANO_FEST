@@ -35,7 +35,6 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    min-height: 100vh;
 }
 .first-page-content{
     display: flex;
@@ -58,6 +57,7 @@ body{
 }
 .first-link{
     text-align: center;
+    padding-bottom: 6.5em;
 }
 .first-page-link{
     display: inline-block;
@@ -76,4 +76,112 @@ body{
     color: #111111;
     background: #ffb922;
     transition: .5s;
+}
+.second-page{
+    background: #FFC64F;
+}
+.second-page-title{
+    font-size: 84px;
+    font-weight: 900;
+    color: #111111;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+.col-title{
+    font-weight: 999;
+    font-size: 39px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: -24px;
+}
+.row-second-page2 col+col{
+    padding-left: 2em;
+}
+.col-title2{
+    font-weight: 999;
+    font-size: 29px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: -21px;
+}
+
+#col-title3{
+    white-space: nowrap;
+}
+
+.row-3{
+    padding-bottom: 2em;
+}
+.second-page-title2{
+    font-size: 58px;
+    font-weight: 900;
+    color: #111111;
+    padding-bottom: 0.5em;
+}
+.col-num6{
+    text-align: center;
+    margin: 0 auto;
+}
+.icon-row3{
+    width: 30px;
+}
+
+
+
+
+
+
+@media(max-width:1290px){
+    .col-title{
+        position:static ;
+        text-align: start;
+    }
+    
+}
+@media(max-width:946px){
+    /* .col-title2{
+        position:static ;
+        text-align: start;
+    } */
+}
+@media(max-width:654px){
+    .img-second-page{
+        max-width: 151px;
+    }
+    .col-title{
+        font-size: 29px;
+    }
+    .second-page-title{
+        font-size: 51px;
+    }
+    .second-page-title2{
+        font-size: 47px;
+    }
+}
+@media(max-width:518px){
+    
+    .col-title2{
+        font-size: 32px;
+    }
+    #col-title3{
+        white-space: normal;
+    }
+
+}
+
+@media(max-width:425px){
+    .second-page-title{
+        font-size: 34px;
+        
+    }
+    .second-page-title2{
+        font-size: 34px;
+    }
+}
+@media(max-width:360px){
+    .col-title{
+        white-space: nowrap;
+    }
 }
