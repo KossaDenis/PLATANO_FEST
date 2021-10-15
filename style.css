@@ -285,13 +285,9 @@ body{
 .footer-link{
     width: 50px;
 }
-.end-text{
-    color:#fff;
-    opacity: .5;
-    padding-top: 2em;
-    font-size: 20px;
+.row-footer{
+    display: flex;
 }
-
 
 
 @media(max-width:1290px){
