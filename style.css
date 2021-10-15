@@ -2,6 +2,9 @@
 *{
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 body{
     font-family: 'Oswald', sans-serif;
 }
@@ -21,7 +24,10 @@ body{
 
 }
 .iCon-nav{
-    background-image: url("img/menuicon.svg") !important;
+    background-image: url("img/menu-btn.png") !important;
+}
+.icon-link{
+    max-width: 30px;
 }
 .nav_link{
     color: #fff !important;
@@ -35,6 +41,12 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+.second-page-content{
+    padding-top: 3em;
+}
+.row-second-page{
+    padding-bottom: 2em;
 }
 .first-page-content{
     display: flex;
@@ -84,7 +96,6 @@ body{
     font-size: 84px;
     font-weight: 900;
     color: #111111;
-    padding-top: 1em;
     padding-bottom: 0.5em;
 }
 .col-title{
@@ -93,10 +104,9 @@ body{
     color: #fff;
     text-align: center;
     position: relative;
-    top: -24px;
 }
-.row-second-page2 col+col{
-    padding-left: 2em;
+.row-second-page2{
+    justify-content: space-between;
 }
 .col-title2{
     font-weight: 999;
@@ -104,7 +114,6 @@ body{
     color: #fff;
     text-align: center;
     position: relative;
-    top: -21px;
 }
 
 #col-title3{
@@ -127,9 +136,161 @@ body{
 .icon-row3{
     width: 30px;
 }
+.section-third{
+    background: url("img/bg-third-section.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 
+}
+.third-page-content{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.title-third-page{
+    font-size: 84px;
+    font-weight: 900;
+    color: #111111;
+    padding-bottom: 0.5em;
+}
+.text-third-page{
+    color: #000;
+    font-size: 42px;
+    font-weight: 900;
+    padding-bottom: 0.5em;
+}
 
-
+.paragraph-third-page{
+    color: #000;
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+.section-fourth{
+    background: url("img/bg-fourth-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.title-fourth-page{
+    font-size: 84px;
+    font-weight: 900;
+    color: #111111;
+    padding-bottom: 0.5em;
+}
+.numbers-text{
+    display: flex;
+    flex-direction: column;
+}
+.number{
+    max-width: 50px;
+}
+.fourth-page-text{
+    display: flex;
+    padding-bottom: 2em;
+    align-items: end;
+}
+.paragraph-fourth-page{
+    padding-left: 2em;
+    font-size: 16px;
+    font-weight: 900;
+}
+.fourth-page-content{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.section-five{
+    background: #FFC64F;
+}
+.five-page-content{
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+.title-five-page{
+    font-size: 84px;
+    font-weight: 900;
+    color: #111111;
+    padding-bottom: 0.5em;
+}
+.paragraph-five-page{
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.text-card{
+    text-align: center;
+    font-size: 20px;
+}
+.title-text-card{
+    font-size: 25px;
+    font-weight: 900;
+}
+.card-text{
+    text-align: center;
+}
+.buying-ticket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.five-page-button{
+    text-decoration: none;
+    background: #FFC64F;
+    color: #111111;
+    font-weight: 900;
+    padding: 10px 40px;  
+    margin-bottom: 1em;
+    border-radius: 20px;
+}
+.five-page-button:hover{
+    background: #111111;
+    color: #fff;
+    transition: 0.5s;
+}
+.transparent-price{
+    opacity: .5;
+}
+.body-card{
+    width: 640px;
+}
+.footer{
+    background: #1F1F1F;
+}
+.footer-content{
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+.title-footer{
+    font-size: 84px;
+    font-weight: 900;
+    color: #fff;
+    padding-bottom: 0.5em;
+}
+.paragraph-footer{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+.footer-span{
+    opacity: .5;
+}
+.footer-link{
+    width: 50px;
+}
+.end-text{
+    color:#fff;
+    opacity: .5;
+    padding-top: 2em;
+    font-size: 20px;
+}
 
 
 
@@ -140,11 +301,49 @@ body{
     }
     
 }
-@media(max-width:946px){
-    /* .col-title2{
-        position:static ;
-        text-align: start;
-    } */
+@media(max-width:1050px){
+    .row-second-page2{
+        justify-content:normal;
+    }
+}
+@media(max-width:1024px){
+    .title-third-page{
+        font-size: 73px;
+    }
+    
+}
+@media(max-width:792px){
+    .title-third-page{
+        font-size: 51px;
+    }
+    .title-fourth-page{
+        font-size: 51px;
+    }
+    .title-five-page{
+        font-size: 51px;
+    }
+    .title-footer{
+        font-size: 51px;
+    }
+}
+@media(max-width:770px){
+    .row-footer{
+        flex-direction: column;
+    }
+}
+@media(max-width:699px){
+    .row-second-page2{
+        justify-content: center;
+    }
+    .second-page-title2{
+        text-align: center;
+    }
+    .row-second-page{
+        text-align: center;
+    }
+    .col-title{
+        text-align: center;
+    }
 }
 @media(max-width:654px){
     .img-second-page{
@@ -159,6 +358,15 @@ body{
     .second-page-title2{
         font-size: 47px;
     }
+
+    .col-title{
+        white-space: nowrap;
+    }
+}
+@media(max-width:612px){
+    .second-page-title{
+        text-align: center;
+    }
 }
 @media(max-width:518px){
     
@@ -170,8 +378,24 @@ body{
     }
 
 }
-
+@media(max-width:492px){
+    .title-third-page{
+        font-size: 34px;
+    }
+    .title-fourth-page{
+        font-size: 34px;
+    }
+    .title-five-page{
+        font-size: 34px;
+    }
+    .title-footer{
+        font-size: 34px;
+    }
+}
 @media(max-width:425px){
+    .menu-nav{
+        width: 182px;
+    }
     .second-page-title{
         font-size: 34px;
         
