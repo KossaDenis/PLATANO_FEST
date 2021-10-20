@@ -36,6 +36,150 @@ body{
     font-size: 20px;
     
 }
+.link-nav:hover{
+    color: #ffc64f !important;
+}
+.popup-bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+}
+.popup-bg2-cop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.logi{
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    left: 11em;
+}
+.popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    background: #1F1F1F;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    padding-top: 60px;
+}
+.popup-bg2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+}
+.popup2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    background: #1F1F1F;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    padding-top: 60px;
+}
+.popup-logo{
+    padding-bottom: 3em;
+    width: 245px;
+}
+.enter{
+    margin-top: 2em;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.enter:hover{
+    background: #ffc64f;
+    transition: .2s;
+}
+.close-popup{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 38px;
+    cursor: pointer;
+}
+.close-popup2{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 38px;
+    cursor: pointer;
+}
+.log{
+    margin-bottom: 1em;
+}
+.title-login{
+    color: #fff;
+    font-size: 20px;
+}
+.title-telephone{
+    color: #fff;
+    font-size: 20px;
+}
+.title-pass{
+    color: #fff;
+    font-size: 20px;
+}
+.email-content{
+    padding-bottom: 1em;
+}
+.pass-content{
+    padding-bottom: 1em;
+}
+.reg{
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    left: 11em;
+}
+.title-email{
+    color: #fff;
+    font-size: 20px;
+}
+.contact-form{
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+}
+.login{
+    border: none;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    padding: 6px;
+}
+.login:hover{
+    background: #ffc64f;
+    transition: .2s;
+}
+.register{
+    border: none;
+    border-radius: 20px;
+    padding: 6px;
+}
+.register:hover{
+    background: #ffc64f;
+    transition: .2s;
+}
 .section-first{
     background-image: url("img/bg_main.png");
     background-repeat: no-repeat;
@@ -103,7 +247,7 @@ body{
     font-size: 39px;
     color: #fff;
     text-align: center;
-    position: relative;
+   
 }
 .row-second-page2{
     justify-content: space-between;
@@ -113,7 +257,7 @@ body{
     font-size: 29px;
     color: #fff;
     text-align: center;
-    position: relative;
+    
 }
 
 #col-title3{
@@ -197,7 +341,7 @@ body{
 }
 .fourth-page-content{
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
 }
 .section-five{
     background: #FFC64F;
@@ -255,10 +399,11 @@ body{
     transition: 0.5s;
 }
 .transparent-price{
-    opacity: .5;
+    color: #6c757d;
 }
 .body-card{
     width: 640px;
+    position: static;
 }
 .footer{
     background: #1F1F1F;
@@ -280,7 +425,7 @@ body{
     padding-bottom: 2em;
 }
 .footer-span{
-    opacity: .5;
+    color: #6c757d;
 }
 .footer-link{
     width: 50px;
@@ -359,6 +504,18 @@ body{
         white-space: nowrap;
     }
 }
+@media(max-width:640px){
+    .popup{
+        width: 494px;
+    }
+    .reg{
+        left: 9em;
+    }
+    .popup2{
+        width: 494px;
+    }
+}
+
 @media(max-width:612px){
     .second-page-title{
         text-align: center;
@@ -374,6 +531,29 @@ body{
     }
 
 }
+@media(max-width:505px){
+    .popup{
+        width: 292px;
+    }
+    .popup2{
+        width: 292px;
+    }
+    .close-popup2{
+        top: 20px;
+    }
+    .logi{
+        padding-top: 1em;
+        left: 0;
+    }
+    .reg{
+        padding-top: 1em;
+        left: 0em;
+    }
+    .close-popup{
+        top: 11px;
+    }
+}
+
 @media(max-width:492px){
     .title-third-page{
         font-size: 34px;
